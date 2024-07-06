@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://blhl5xx60dy8w"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_sw87b"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_sw87b")
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 488.0
+offset_top = 46.0
+offset_right = 585.0
+offset_bottom = 69.0
+text = "Hopsacka2D"
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 516.0
+offset_top = 193.0
+offset_right = 562.0
+offset_bottom = 224.0
+grow_horizontal = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Start"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
